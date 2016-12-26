@@ -6,6 +6,9 @@
   "bin": {
     "getmyip": "./index.js"
   },
+  "scripts": {
+      "test": "eslint index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Praseetha-KR/getmyip.git"
