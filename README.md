@@ -20,11 +20,16 @@ $ npm install -g getmyip
 $ getmyip
 ```
 
-To print in verbose mode:
-
+##### Available options:
 ```sh
-$ getmyip --verbose
+-v, --verbose  Show more details
+-h, --help     output usage information
+-V, --version  output the version number
 ```
+
+<div style="text-align: center">
+	<img src="./screenshot_getmyip.png" width="400" />
+</div>
 
 ## License
 
