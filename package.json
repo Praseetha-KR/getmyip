@@ -1,0 +1,26 @@
+{
+  "name": "getmyip",
+  "version": "0.0.1",
+  "description": "Command line utility to print current IP address",
+  "main": "index.js",
+  "bin": {
+    "getmyip": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Praseetha-KR/getmyip.git"
+  },
+  "keywords": [
+    "ip", "cli"
+  ],
+  "author": "Praseetha-KR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Praseetha-KR/getmyip/issues"
+  },
+  "homepage": "https://github.com/Praseetha-KR/getmyip#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "node-fetch": "^1.6.3"
+  }
+}
