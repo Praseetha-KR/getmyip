@@ -15,7 +15,7 @@ const OPTIONS = {
     headers: {
         'Accept': 'application/json'
     }
-}
+};
 
 function objToStr(obj) {
     var keyval = Object.keys(obj).map(key => `${key}\t: ${obj[key]}`);
@@ -26,12 +26,12 @@ function ProcessVerboseResponse(response) {
     var res = {
         ip: response.ip,
         host: response.hostname,
-        city: response.city, 
+        city: response.city,
         region: response.region,
         country: response.country,
         loc: response.loc,
         org: response.org
-    }
+    };
     return objToStr(res);
 }
 
@@ -43,4 +43,3 @@ fetch(URL, OPTIONS)
     })
     .then(text => console.log(text))
     .catch(err => console.log(err));
-
