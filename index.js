@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
-var fetch = require('node-fetch');
-var program = require('commander');
+const fetch = require('node-fetch');
+const program = require('commander');
+const pkg = require('./package.json');
 
 program
-    .version('0.0.1')
+    .version(pkg.version)
     .description('`getmyip` command prints your current IP')
     .usage('[options]')
     .option('-v, --verbose', 'Show more details')
@@ -18,12 +19,12 @@ const OPTIONS = {
 };
 
 function objToStr(obj) {
-    var keyval = Object.keys(obj).map(key => `${key}\t: ${obj[key]}`);
+    const keyval = Object.keys(obj).map(key => `${key}\t: ${obj[key]}`);
     return keyval.join('\n');
 }
 
 function ProcessVerboseResponse(response) {
-    var res = {
+    const res = {
         ip: response.ip,
         host: response.hostname,
         city: response.city,
