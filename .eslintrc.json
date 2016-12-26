@@ -1,0 +1,39 @@
+{
+    "root": true,
+    "parserOptions": {
+        "ecmaVersion": 2015
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "extends": ["eslint:recommended"],
+    "rules": {
+        "indent": [
+            "warn",
+            4
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "curly": [
+            "error",
+            "multi-line"
+        ],
+        "eqeqeq": [
+            "error",
+            "smart"
+        ],
+        "comma-dangle": [
+            "error",
+            "only-multiline"
+        ],
+        "no-eq-null": "error",
+        "no-console": "off"
+    }
+}
