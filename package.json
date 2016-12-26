@@ -1,6 +1,6 @@
 {
   "name": "getmyip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Command line utility to print current IP address",
   "main": "index.js",
   "bin": {
