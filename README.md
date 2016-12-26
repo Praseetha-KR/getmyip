@@ -28,7 +28,7 @@ $ getmyip
 ```
 
 <div style="text-align: center">
-	<img src="./screenshot_getmyip.png" width="400" />
+	<img src="./screenshot_getmyip.png" width="600" />
 </div>
 
 ## License
