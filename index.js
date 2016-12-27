@@ -4,24 +4,12 @@ const fetch = require('node-fetch');
 const program = require('commander');
 const pkg = require('./package.json');
 
-program
-    .version(pkg.version)
-    .description('`getmyip` command prints your current IP')
-    .usage('[options]')
-    .option('-v, --verbose', 'Show more details')
-    .parse(process.argv);
-
 const URL = 'http://ipinfo.io';
 const OPTIONS = {
     headers: {
         'Accept': 'application/json'
     }
 };
-
-function objToStr(obj) {
-    const keyval = Object.keys(obj).map(key => `${key}\t: ${obj[key]}`);
-    return keyval.join('\n');
-}
 
 function ProcessVerboseResponse(response) {
     const res = {
@@ -35,6 +23,18 @@ function ProcessVerboseResponse(response) {
     };
     return objToStr(res);
 }
+
+function objToStr(obj) {
+    const keyval = Object.keys(obj).map(key => `${key}\t: ${obj[key]}`);
+    return keyval.join('\n');
+}
+
+program
+    .version(pkg.version)
+    .description('`getmyip` command prints your current IP')
+    .usage('[options]')
+    .option('-v, --verbose', 'Show more details')
+    .parse(process.argv);
 
 fetch(URL, OPTIONS)
     .then(res => res.json())

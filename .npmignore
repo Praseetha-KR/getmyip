@@ -1,0 +1,7 @@
+node_modules
+screenshot_*
+.editorconfig
+.eslintrc.json
+.gitattributes
+.travis.yml
+_config.yml

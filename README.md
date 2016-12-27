@@ -27,9 +27,8 @@ $ getmyip
 -V, --version  output the version number
 ```
 
-<div style="text-align: center">
-	<img src="./screenshot_getmyip.png" width="600" />
-</div>
+<img src="https://raw.githubusercontent.com/Praseetha-KR/getmyip/master/screenshot_getmyip.png" width="600" />
+
 
 ## License
 
