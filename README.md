@@ -3,8 +3,10 @@
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![Dependency Status][david-image]][david-url]
+[![Known Vulnerabilities](https://snyk.io/test/github/Praseetha-KR/getmyip/badge.svg?targetFile=package.json)](https://snyk.io/test/github/Praseetha-KR/getmyip?targetFile=package.json)
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
+
 
 A tiny CLI utility to print your public IP address.
 
