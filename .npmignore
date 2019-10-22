@@ -5,3 +5,4 @@ screenshot_*
 .gitattributes
 .travis.yml
 _config.yml
+package-lock.json
